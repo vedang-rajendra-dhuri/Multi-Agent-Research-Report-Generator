@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ReportPilot
 
 ReportPilot is a source-grounded research and report-generation workspace. It helps a user turn a research question into a structured report with linked source passages, claim assessments, a review process, and exportable output. The application combines a React frontend, a FastAPI backend, PostgreSQL persistence, a LangGraph research workflow, and a separate background worker.
@@ -290,3 +291,6 @@ Then retry the failed research task in the workspace. If it continues to fail, c
 ## Current limitations
 
 Workspace membership, password recovery, and broader settings screens are not implemented. Document retrieval uses English PostgreSQL full-text search rather than embedding-based semantic search. Search quality and generated report quality depend on the external providers. Live database and provider integration should be validated before production use; the project should not be treated as production-ready without additional deployment-specific security hardening and operational testing.
+=======
+# ResearchPilot
+>>>>>>> f44f7f9a4ae108aaeb31489c975b67d5e6ca263d
