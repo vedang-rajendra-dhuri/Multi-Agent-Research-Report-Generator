@@ -27,14 +27,15 @@ services:
         sync: false
 
   # 2. React Frontend Static Site
-  - type: static
+  - type: web
     name: researchpilot-frontend
+    runtime: static
     repo: https://github.com/vedang-rajendra-dhuri/ResearchPilot
     branch: main
     rootDir: frontend
     plan: free
     buildCommand: npm install && npm run build
-    publishPath: dist
+    staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
         fromService:
